@@ -1,30 +1,39 @@
-body{
+body {
   background-repeat: repeat-y;
   background-position: left;
   padding: 10px 40px 10px 110px;
+  background-image: url('sin.png');
 }
 
-
-p:first-letter{
+p:first-letter {
   margin-left: 25px;
+  text-align: justify;
 }
 
-h1, h2{
+h1,
+h2 {
   font-variant: small-caps;
 }
 
-.kepek{
+.kepek {
+  float: right;
+  margin: 10px;
   width: 333px;
   margin-left: 25px;
   margin-bottom: 25px;
   border-radius: 20px;
   box-shadow: 10px 10px 5px #888888;
-  -ms-transform: rotate(3deg); /* IE 9 */
-  -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+  -ms-transform: rotate(3deg);
+  /* IE 9 */
+  -webkit-transform: rotate(3deg);
+  /* Chrome, Safari, Opera */
   transform: rotate(3deg);
 }
 
-#urlap{
+#urlap {
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 20px;
   border: 1px dotted gray;
   border-radius: 20px;
   text-align: center;
