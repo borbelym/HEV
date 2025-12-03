@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gödöllői HÉV</title>
+    <link rel="stylesheet" href="hev.css" />
 </head>
 
 <body>
@@ -93,6 +94,18 @@
 
     <div id="urlap">
         <h3>Menetidő számítás</h3>
+
+        <form id="menetidoForm">
+            <label>Induló állomás:</label>
+            <select id="start">
+
+            </select>
+            <label>Végállomás:</label>
+            <select id="end">
+
+            </select>
+            <button type="button" onclick="szamitas()">Számít</button>
+        </form>
 
     </div>
 
