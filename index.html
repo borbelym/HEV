@@ -94,21 +94,26 @@
 
     <div id="urlap">
         <h3>Menetidő számítás</h3>
-
         <form id="menetidoForm">
-            <label>Induló állomás:</label>
+            <label for="start">Induló állomás:</label><br>
             <select id="start">
+                <option value="0" selected>Gödöllő</option>
+                <option value="10">Rákosliget</option>
+                <option value="20">Kistarcsa</option>
+                <option value="30">Örs vezér tere</option>
+            </select><br><br>
 
-            </select>
-            <label>Végállomás:</label>
+            <label for="end">Végállomás:</label><br>
             <select id="end">
+                <option value="0">Gödöllő</option>
+                <option value="10">Rákosliget</option>
+                <option value="20">Kistarcsa</option>
+                <option value="30" selected>Örs vezér tere</option>
+            </select><br><br>
 
-            </select>
-            <button type="button" onclick="szamitas()">Számít</button>
+            <button type="button" onclick="szamitas()">Számítás</button>
         </form>
-
     </div>
-
 
     </div>
 
