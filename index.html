@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gödöllői HÉV</title>
     <link rel="stylesheet" href="hev.css" />
+
+    <meta charset="UTF-8">
+    <title>Menetidő számítás</title>
+
+    <script>
+        function mutatMenetidot(megallo1, megallo2, menetidok) {
+            if (megallo1 === megallo2) {
+                alert("Hiba: Azonos megállókat választott ki!");
+                return;
+            }
+
+
+            let idokulonbseg = Math.abs(menetidok[megallo1] - menetidok[megallo2]);
+
+            alert("Menetidő: " + idokulonbseg + " perc!");
+        }
+    </script>
+
+
 </head>
 
 <body>
@@ -145,7 +164,10 @@
                 <option value="48">Örs vezér tere</option>
             </select><br><br>
 
-            <button type="button" onclick="szamitas()">Számítás</button>
+            <button onclick="mutatMenetidot('A', 'C', {'A':0,'B':20,'C':48,'D':65})">
+
+            </button>
+
         </form>
     </div>
 
